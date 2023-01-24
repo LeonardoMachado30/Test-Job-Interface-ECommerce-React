@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { CardList, Header } from '../components/index';
+import Head from "next/head";
+import Image from "next/image";
+import { CardList, Header, Footer, ShoppingCart } from "../components/index";
 
 export default function Home() {
   return (
@@ -11,10 +11,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <Header />
       <main>
+        <Header />
         <CardList />
+        <Footer />
+        <ShoppingCart />
       </main>
     </>
-  )
+  );
 }
